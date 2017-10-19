@@ -2,6 +2,7 @@ language: node_js
 node_js: '8'
 before_deploy: yarn run browserify
 deploy:
+  skip_cleanup: true
   provider: npm
   email: serveradmin@octoblu.com
   api_key:
