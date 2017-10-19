@@ -1,9 +1,11 @@
-[![Build Status](https://travis-ci.org/grs/rhea.svg?branch=master)](https://travis-ci.org/grs/rhea)
+[![Build Status](https://travis-ci.org/octoblu/rhea.svg?branch=master)](https://travis-ci.org/octoblu/rhea)
 
 # rhea
 
 A reactive library for the [AMQP](http://amqp.org/) protocol, for easy
 development of both clients and servers.
+
+Forked from [grs/rhea](https://github.com/grs/rhea)
 
 * [Hello World!](#hello-world)
 * [API](#api)

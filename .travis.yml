@@ -1,6 +1,11 @@
 language: node_js
-node_js:
-    - "6"
-    - "4"
-    - "0.12"
-    - "0.10"
+node_js: '8'
+before_deploy: yarn run browserify
+deploy:
+  provider: npm
+  email: serveradmin@octoblu.com
+  api_key:
+    secure: g49a3l0vkvyhMATuLUpBgHVP5McISUrwsOkKqHtiOxzK86hxuNzn2VDxABoctLkWSAednVMaum/N2BKJ3t8Su1hDdTZ8AJuC11+1aygWmDfULI5QVtEayMmOQt/oytoz5Z139Bq5wL9MvCTkh1F67cHjpc8sil8kiINygkl7W60jef++IOagrz2rHtiejgIme8wx4dqwZQHpGt+cOx8Prwk8m4toW6db5xT+ICcyUcqyHDrjR/Dr3nw8DKhb+2TMMcSWRjm75Fi9hkk3TxU0D8lAuDoH8MnSHV5M156a/zo5Gz2K7h26LQYke1slCy/+h24Ktd/8zvSoQRLdxx31MxHNrzdWw/vmpiABLIN5WXlIAEcEXJlp44+eoYD3j1Os1ACmH9oSRNJBmLtBiq0hEvbd5sD1rpVsJisrm7U48zXAgnXVEAcTcubfnNjwOEWhooM6PufS0c6k8QlaKq/ji2gJJRP2zyXKP7cxJR8ugnyf1aFARlIZMmICROZICGzPUp4ve9XUsZRYp7yPWhHsOdaSxj8ER95z3tH6CHDsyKuYqbBvSgbjpY0xVtxgsYfpO7JeCID0lABzchrQ4oojG6heyfPB4p2n/8mwlVYjcd12DMK6wfaYSfP9GwifXu6GK4UkUaPY69zPV5mPdGXdVHJvnVCHF2t/eeKVu/qKzRs=
+  on:
+    tags: true
+    repo: octoblu/rhea

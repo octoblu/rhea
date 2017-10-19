@@ -1,30 +1,33 @@
 {
-    "name" : "rhea",
-    "version": "0.2.5",
-    "description": "reactive AMQP 1.0 library",
-    "homepage": "http://github.com/grs/rhea",
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/grs/rhea"
-    },
-    "dependencies": {
-        "debug": ">=0.8.0"
-    },
-    "devDependencies": {
-        "eslint":"",
-        "mocha":"^3.0.0",
-        "browserify":"",
-        "istanbul": "",
-        "minimist":""
-    },
-    "scripts": {
-        "lint": "eslint lib/*.js",
-        "test": "mocha",
-        "coverage": "istanbul cover _mocha",
-        "browserify": "browserify -r .:rhea -o rhea.js",
-        "run-examples": "mocha examples/test_examples.js"
-    },
-    "keywords": ["amqp","messaging"],
-    "main" : "./lib/container.js"
+  "name": "@octoblu/rhea",
+  "version": "1.0.0",
+  "description": "reactive AMQP 1.0 library",
+  "homepage": "http://github.com/octoblu/rhea",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/octoblu/rhea"
+  },
+  "dependencies": {
+    "debug": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "mocha": "^3.0.0",
+    "browserify": "^14.4.0",
+    "istanbul": "0.4.5",
+    "minimist": "^1.1.0"
+  },
+  "scripts": {
+    "lint": "eslint lib/*.js",
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha",
+    "browserify": "browserify -r .:rhea -o browser.js",
+    "run-examples": "mocha examples/test_examples.js"
+  },
+  "keywords": [
+    "amqp",
+    "messaging"
+  ],
+  "main": "./lib/container.js"
 }
