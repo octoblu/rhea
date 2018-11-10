@@ -52,7 +52,7 @@ folder. These include:
 * [direct_helloworld.js](examples/direct_helloworld.js) - an example
   showing the sending of a single message without the use of a broker,
   by listening on a port and then openning a connection to itself over
-  which the message is transfered.
+  which the message is transferred.
 
 * [simple_send.js](examples/simple_send.js) - connects to a specified
   port then sends a number of messages to a given address
@@ -61,7 +61,7 @@ folder. These include:
   port then subscribes to receive a number of messages from a given
   address
 
-These last two can be used together to demsontrate sending messages
+These last two can be used together to demonstrate sending messages
 from one process to another, using a broker or similar intermediary to
 which they both connect.
 
@@ -71,8 +71,8 @@ which they both connect.
 
 The direct_recv.js example can be used in conjunction with the
 simple_send.js example to demonstrate sending messages between
-processes without the use of any intermediary. Note however the the
-default port of one or ther other will need to be changed through the
+processes without the use of any intermediary. Note that however the
+default port of one or the other will need to be changed through the
 -p command line option.
 
 * [client.js](examples/client.js) and [server.js](examples/server.js)
@@ -84,7 +84,7 @@ default port of one or ther other will need to be changed through the
 
 * In durable_subscription, a
   [subscriber](examples/durable_subscription/subscriber.js) and a
-  [publisher]( examples/durable_subscription/publisher.js)which
+  [publisher]( examples/durable_subscription/publisher.js) which
   demonstrate the notion of a durable subscription when used in
   conjunction with a broker such as ActiveMQ
 
@@ -113,7 +113,7 @@ default port of one or ther other will need to be changed through the
   a [server](examples/websockets/echo.js) which will echo back any
   requests received. The clients can also be used against a websocket
   enabled AMQP broker with a queue or topic called 'examples'. The
-  node based scritps require the 'ws' node module to be installed. The
+  node based scripts require the 'ws' node module to be installed. The
   browser based example requires a browserified version of the rhea
   library (this can be created e.g. by calling npm run-script
   browserify).
@@ -179,7 +179,7 @@ following fields:
       reconnect if disconnected
     * if false, automatic reconnect will be disabled
     * if it is a numeric value, it is interpreted as the delay between
-      reconnect attempts (in milliseconds)
+      reconnect attempts (in milliseconds).
     When enabled, reconnect can be further controlled via the
     following options:
     * initial_reconnect_delay (in milliseconds)
